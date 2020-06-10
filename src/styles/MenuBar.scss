@@ -1,0 +1,64 @@
+@import 'variables.scss';
+.menubar_container {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    font-family: Helvetica;
+    font-weight:bold;
+    justify-content: space-between;
+    //background:$scheme_silver_grey;
+    height:64px;
+    align-items: center;
+
+}
+.menubar_item {
+    font-size: 2rem;
+    padding: 0 1rem;
+    color:$scheme_offwhite;
+    background:$scheme_silver_grey;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background .5s ease-in;
+
+    
+}
+.menubar_item:hover{
+    color:$scheme_offwhite;
+    cursor: pointer;
+    background: rgba(0,0,0,0);
+    transition: background .5s ease-in;
+
+}
+.menu_item:active{
+    color:$scheme_silver_grey;
+}
+.menubar_icon {
+    display: none;
+}
+
+@media only screen and (max-width: $medium_screen) {
+    .menubar_container {
+        justify-content: center;
+    }
+    .menubar_icon {
+        display: block;
+        font-size: 2rem;
+        color:$scheme_red;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .menubar_icon_photo{
+        padding: 0 .5rem;
+    }
+    .menubar_item{
+        display:none;
+    }
+
+}
+a {
+    text-decoration: none;
+}

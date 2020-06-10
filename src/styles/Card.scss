@@ -1,0 +1,45 @@
+@import "variables.scss";
+
+.card_container {
+    background-color:$scheme_silver_grey;
+    text-align: center;
+    border-radius: .3rem;
+    display:inline-block;
+}
+.card_title, 
+.card_content{
+    display:inline-block;
+    font-family: Helvetica;
+    width:80%;  
+    margin: 1rem 0;
+    background: $scheme_offwhite;
+    padding: 1rem;
+    border-radius: .3rem;
+    color: $scheme_blue;
+}
+.card_title {
+    font-size:2rem;
+    font-weight: bold;
+}
+.card_content {
+    text-align: left;
+}
+
+
+@media only screen and (min-width: $medium_screen) {
+    .card_container{
+        width:35%;
+
+    }
+    .card_title{
+
+    }
+}
+@media only screen and (max-width: $medium_screen) {
+    .card_container{
+        width:80%;
+    }
+    .card_title {
+
+    }
+}
