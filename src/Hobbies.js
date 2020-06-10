@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/Hobbies.scss';
 import Card from "./Card"
-import violin from './images/violin.mp3';
+import violin from './images/violin2.mp3';
 import bread from './images/bread.JPG';
 const violinist = {
     title: "Violin",
