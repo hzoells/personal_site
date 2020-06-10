@@ -41,7 +41,11 @@
 
 @media only screen and (max-width: $medium_screen) {
     .menubar_container {
+        flex-direction: column;
         justify-content: center;
+        &.accordion {
+            height:100%;
+        }
     }
     .menubar_icon {
         display: block;
@@ -50,12 +54,22 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        padding: 1rem 0;
     }
     .menubar_icon_photo{
         padding: 0 .5rem;
     }
     .menubar_item{
         display:none;
+        &.show{
+            display: inline-block;
+        }
+        padding: 1rem 0;
+        color:$scheme_blue;
+    }
+    .menubar_item:hover{
+        color:$scheme_blue;
+    
     }
 
 }
