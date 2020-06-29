@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+.button{
+    height:40px;
+    background: $desert_plum;
+    color: $desert_tan;
+    font-family: Helvetica;
+    font-size:1rem;
+    padding: .3rem 1rem;
+    border-radius:.3rem;
+    width:10rem;
+    font-weight: bold;
+    &:focus {
+        border: none;
+        outline: none;
+    }
+    margin: 0 5px;
+
+}

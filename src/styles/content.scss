@@ -1,0 +1,21 @@
+@import './variables.scss';
+.content{
+    font-family: Helvetica;
+    text-align: left;
+    color:$desert_black;
+    img{
+        margin: .5rem;
+        max-width:90%;
+        border: .2rem $desert_plum solid;
+        align-self: center;
+    }
+    ul{
+        list-style-type: disc;
+        margin-left:2rem;
+        margin-right:1rem;
+        margin-bottom: .75rem;
+        li{
+            margin: .2rem 0;
+        }
+    }
+}

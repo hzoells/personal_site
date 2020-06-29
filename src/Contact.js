@@ -6,7 +6,7 @@ import githubLogo from "./images/GitHub_Logo.png";
 import linkedIn from "./images/LI-In-Bug.png";
 const about = {
     title: "About Me",
-    content: "I am a software engineer with expertise in web development and interest in kernel development. I studied physics at Columbia University. My personal pursuits include the violin and cooking."
+    content: "I am a software engineer with a background in physics and work experience in software consulting. My coding interests range from web development to kernel hacking to machine learning. I hope to soon be a contributor to a large scale operating systems project. Outside of programming my interests include playing the violin and cooking."
 }
 const contact = {
     title: "Contact",

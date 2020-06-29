@@ -3,6 +3,7 @@ import './styles/Hobbies.scss';
 import Card from "./Card"
 import violin from './images/violin2.mp3';
 import bread from './images/bread.JPG';
+import cake from './images/cake.JPG';
 const violinist = {
     title: "Violin",
     content: (
@@ -25,7 +26,11 @@ const Cook = {
                 <img className="hobbies_image" src={bread} alt="">
                 </img>
             </a>
-            Ever since I was young, I have been interested in cooking. My particular interests include bread-baking, pasta-making, fermentation, and knife care.
+            An enjoyment of cooking was instilled in me from a young age by my grandmothers, who taught me both the cullinary skills and enthusiasm.  Areas of particular interest include classic french cuisine, fermentation, and knife care.
+            <a className="hobbies_gif">
+                <img className="hobbies_image" src={cake} alt="">
+                </img>
+            </a>
             
         </div>
     )
@@ -33,8 +38,8 @@ const Cook = {
 function Hobbies(){
     return (
         <div className="hobbies_container">
-            <Card {...violinist}/>
             <Card {...Cook} />
+            <Card {...violinist}/>
         </div>
     )
 }

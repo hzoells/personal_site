@@ -6,6 +6,7 @@
     padding: 2rem 0;
     justify-content: start;
     align-items: flex-start;
+    flex-wrap: wrap;
     .card_content {
         ul{
             list-style-type: disc;
@@ -49,4 +50,16 @@
         margin-top: 2rem;
     }
     
+}
+
+@media only screen and (min-width: $medium_screen) {
+    .experience_container{
+
+        @for $i from 1 through 10 {
+            .card_container:nth-child($i) {
+                position:relative;
+                top: 10px * $i;
+            }
+        }
+    }
 }

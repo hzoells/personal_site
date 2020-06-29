@@ -1,25 +1,33 @@
 @import "variables.scss";
-
-.card_container {
-    background-color:$scheme_silver_grey;
-    text-align: center;
-    border-radius: .3rem;
-    display:inline-block;
+@import "./content.scss";
+.card_title{
+    font-family: Helvetica;
+    background:$desert_black;
+    color:$desert_tan;
+    padding: 1rem 0;
+    box-sizing:border-box;
+    border: .2rem solid $desert_black;
+    font-size:1.5rem;
+    font-weight: bold;
 }
-.card_title, 
+.card_content_container {
+    background-color:$desert_tan;
+    //border-radius: .4rem;
+    display:inline-block;
+    box-sizing:border-box;
+    border: .2rem solid $desert_black;
+    margin: 0;
+    padding:1rem;
+}
 .card_content{
     display:inline-block;
     font-family: Helvetica;
-    width:80%;  
-    margin: 1rem 0;
-    background: $scheme_offwhite;
+    background: $desert_white;
     padding: 1rem;
-    border-radius: .3rem;
-    color: $scheme_blue;
-}
-.card_title {
-    font-size:2rem;
-    font-weight: bold;
+    //border-radius: .4rem;
+    color: $desert_black;
+    border: .2rem solid $desert_plum;
+    box-sizing: border-box;
 }
 .card_content {
     text-align: left;
@@ -27,19 +35,40 @@
 
 
 @media only screen and (min-width: $medium_screen) {
-    .card_container{
-        width:35%;
+    .card_content_container{
+        width:400px;
 
     }
     .card_title{
-
+        width:400px;
     }
 }
 @media only screen and (max-width: $medium_screen) {
-    .card_container{
-        width:80%;
+    .card_content_container{
+        width:400px;
     }
-    .card_title {
+    .card_title{
+        width:400px;
+    }
+}
 
+@media only screen and (max-width: $medium_screen) {
+    .card_content_container{
+        width:350px;
+        padding: .5rem;
+
+    }
+    .card_title{
+        width:350px;
+    }
+}
+@media only screen and (max-width: $mini_screen) {
+    .card_content_container{
+        width:280px;
+        padding: .5rem;
+
+    }
+    .card_title{
+        width:280px;
     }
 }
