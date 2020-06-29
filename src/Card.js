@@ -6,9 +6,12 @@ function Card(props){
             <div className="card_title">
                 {props.title}
             </div>
-            <div className="card_content">
-                {props.content}
+            <div className="card_content_container">
+                <div className="card_content">
+                    {props.content}
+                </div>
             </div>
+            
 
         </div>
     )

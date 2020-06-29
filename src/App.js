@@ -11,8 +11,9 @@ import Background from './Background';
 import Contact from './Contact';
 import Experience from './Experience'
 import Samples from './Samples';
-import Hobbies from './Hobbies'
-
+import Hobbies from './Hobbies';
+import WorkPage from './WorkPage';
+import {projects, skills} from './samplesContent';
 function App() {
   
   return (
@@ -31,6 +32,15 @@ function App() {
           </Route>
           <Route path="/personal">
             <Hobbies />
+          </Route>
+          <Route path="/projects">
+            <WorkPage {...projects}/>
+          </Route>
+          <Route path="/skills">
+            <WorkPage {...skills}/>
+          </Route>
+          <Route path="/samples">
+            
           </Route>
           <Route path="/">
             <Background/>

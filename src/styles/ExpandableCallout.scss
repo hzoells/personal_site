@@ -1,0 +1,62 @@
+@import './variables.scss';
+@import './content.scss';
+.callout_container{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-right:3%;
+    .callout_tosite{
+        display:none;
+    }
+    &.show{
+        .callout_tosite{
+            display:inline-block;
+        }
+    }
+}
+
+.callout_title{
+    font-family: Helvetica;
+    background:$desert_black;
+    color:$desert_tan;
+    padding: 1rem 0;
+    box-sizing:border-box;
+    border: .2rem solid $desert_black;
+    font-size:1.5rem;
+    font-weight: bold;
+}
+
+.callout_content{
+    background: $desert_white;
+    color: $desert_black;
+    border: .2rem solid $desert_plum;
+    box-sizing: border-box;
+    width:100%;
+    margin-bottom:1rem;
+}
+.callout_accordion{
+    width:350px;
+    height:auto;
+    max-height: 0px;
+    overflow:hidden;
+    transition: max-height .5s linear,width .5s linear;
+    &.show{
+        width:600px;
+        max-height:1500px;
+        transition: max-height .5s linear,width .5s linear;
+    }
+}
+.callout_content_container{
+    border: .2rem solid $desert_black;
+    background:$desert_tan;
+    padding:1rem;
+}
+
+@media only screen and (max-width: $medium_screen) {
+    .callout_accordion{
+        width:300px;
+        &.show{
+            width:300px;
+        }
+    }
+}

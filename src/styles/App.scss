@@ -11,10 +11,15 @@ body,
   height:100%;
 }
 .App {
+  position:relative;
   text-align: center;
-  background: url(../images/lasuisse.jpg) bottom center no-repeat;
+  background: url(../images/needles3.jpg) bottom center no-repeat;
   background-size: cover;
   min-height:100%;
+  min-width:100%;
+  background-attachment: fixed;
+  background-position: top;
+  z-index:0;
 }
 
 .App-logo {
@@ -56,4 +61,20 @@ h1 {
   font-family: Helvetica;
   font-size: 3rem;
   padding:1rem;
+}
+
+h3 {
+  font-family: Helvetica;
+  font-size: 1rem;
+  padding:1rem;
+  font-weight: bold;
+  color:$desert_black;
+  line-height: 1.3rem;
+
+}
+p {
+  font-family: Helvetica;
+  font-size: 1rem;
+  padding:.3rem 1rem;
+  color:$desert_black;
 }
