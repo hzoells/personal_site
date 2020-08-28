@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import './styles/MenuBar.scss';
 import hamburger from './images/hamburger.svg';
+import resume from './docs/resume.pdf'
 class MenuBar extends React.Component {
     constructor(props){
         super(props);
@@ -91,6 +92,9 @@ class MenuBar extends React.Component {
                             <Link className={`menubar_subitem`} to="/skills" onClick={()=>this.toggleItems("work")}>
                                 Skills
                             </Link>
+                            <a className="menubar_subitem" href={resume} onClick={()=>this.toggleItems("work")}>
+                                Resume
+                            </a>
                         </div>
                     </div>
                     <div className="menubar_item_container">
